@@ -50,7 +50,7 @@
 		B399BCBC1AD5A76D009E1A50 /* FABJLObjectDeserializer.h in Headers */ = {isa = PBXBuildFile; fileRef = B340CC4F1A6DEC6700329CF6 /* FABJLObjectDeserializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B399BCBD1AD5A76D009E1A50 /* FABJLObjectMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = B340CC511A6DEC6700329CF6 /* FABJLObjectMapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B399BCBE1AD5A76D009E1A50 /* FABJLObjectSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = B340CC531A6DEC6700329CF6 /* FABJLObjectSerializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B399BCBF1AD5A76D009E1A50 /* FABJLTranscodingBase.h in Headers */ = {isa = PBXBuildFile; fileRef = B340CC551A6DEC6700329CF6 /* FABJLTranscodingBase.h */; };
+		B399BCBF1AD5A76D009E1A50 /* FABJLTranscodingBase.h in Headers */ = {isa = PBXBuildFile; fileRef = B340CC551A6DEC6700329CF6 /* FABJLTranscodingBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B399BCC01AD5A76D009E1A50 /* FABJLObjectMappingUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = B340CC581A6DEC6700329CF6 /* FABJLObjectMappingUtils.h */; };
 		B399BCC11AD5A76D009E1A50 /* FABJLTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = B340CC5A1A6DEC6700329CF6 /* FABJLTimer.h */; };
 /* End PBXBuildFile section */
