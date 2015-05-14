@@ -77,7 +77,7 @@
 		B32198971749A10700066DA7 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = "include/${PRODUCT_NAME}";
+			dstPath = include/FABJLJSONMapping;
 			dstSubfolderSpec = 16;
 			files = (
 				B371B9441B02912C00B9A0FB /* FABJLTranscodingBase.h in CopyFiles */,
@@ -94,7 +94,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		B32198991749A10700066DA7 /* libJLJSONMapping.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJLJSONMapping.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B32198991749A10700066DA7 /* libFABJLJSONMapping.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFABJLJSONMapping.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B321989C1749A10700066DA7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B32198AA1749A10800066DA7 /* JLJSONMappingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JLJSONMappingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B340CC1C1A6DEC4F00329CF6 /* XCTestCase+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XCTestCase+Util.h"; sourceTree = "<group>"; };
@@ -178,7 +178,7 @@
 		B321989A1749A10700066DA7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B32198991749A10700066DA7 /* libJLJSONMapping.a */,
+				B32198991749A10700066DA7 /* libFABJLJSONMapping.a */,
 				B32198AA1749A10800066DA7 /* JLJSONMappingTests.xctest */,
 			);
 			name = Products;
@@ -331,9 +331,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		B32198981749A10700066DA7 /* JLJSONMapping */ = {
+		B32198981749A10700066DA7 /* FABJLJSONMapping */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B32198BE1749A10800066DA7 /* Build configuration list for PBXNativeTarget "JLJSONMapping" */;
+			buildConfigurationList = B32198BE1749A10800066DA7 /* Build configuration list for PBXNativeTarget "FABJLJSONMapping" */;
 			buildPhases = (
 				B32198951749A10700066DA7 /* Sources */,
 				B32198961749A10700066DA7 /* Frameworks */,
@@ -344,9 +344,9 @@
 			);
 			dependencies = (
 			);
-			name = JLJSONMapping;
+			name = FABJLJSONMapping;
 			productName = JLJSONMapping;
-			productReference = B32198991749A10700066DA7 /* libJLJSONMapping.a */;
+			productReference = B32198991749A10700066DA7 /* libFABJLJSONMapping.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		B32198A91749A10800066DA7 /* JLJSONMappingTests */ = {
@@ -389,7 +389,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B32198981749A10700066DA7 /* JLJSONMapping */,
+				B32198981749A10700066DA7 /* FABJLJSONMapping */,
 				B32198A91749A10800066DA7 /* JLJSONMappingTests */,
 			);
 		};
@@ -475,7 +475,7 @@
 /* Begin PBXTargetDependency section */
 		B32198B11749A10800066DA7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B32198981749A10700066DA7 /* JLJSONMapping */;
+			target = B32198981749A10700066DA7 /* FABJLJSONMapping */;
 			targetProxy = B32198B01749A10800066DA7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -611,7 +611,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B32198BE1749A10800066DA7 /* Build configuration list for PBXNativeTarget "JLJSONMapping" */ = {
+		B32198BE1749A10800066DA7 /* Build configuration list for PBXNativeTarget "FABJLJSONMapping" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B32198BF1749A10800066DA7 /* Debug */,
