@@ -41,14 +41,6 @@
 		B340CC6C1A6DEC6700329CF6 /* FABJLTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = B340CC5B1A6DEC6700329CF6 /* FABJLTimer.m */; };
 		B340CC6D1A6DEC6700329CF6 /* FABJLTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = B340CC5B1A6DEC6700329CF6 /* FABJLTimer.m */; };
 		B340CC751A6DF23700329CF6 /* EnumerationContainingTestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B340CC741A6DF23700329CF6 /* EnumerationContainingTestObject.m */; };
-		B371B93D1B02911C00B9A0FB /* FABJLCategoryLoader.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B399BCA41AD5A355009E1A50 /* FABJLCategoryLoader.h */; };
-		B371B93E1B02911C00B9A0FB /* NSError+JLJSONMapping.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B340CC481A6DEC6700329CF6 /* NSError+JLJSONMapping.h */; };
-		B371B93F1B02911C00B9A0FB /* NSMutableArray+JLJSONMapping.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B340CC4A1A6DEC6700329CF6 /* NSMutableArray+JLJSONMapping.h */; };
-		B371B9401B02911C00B9A0FB /* NSObject+JLJSONMapping.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B340CC4C1A6DEC6700329CF6 /* NSObject+JLJSONMapping.h */; };
-		B371B9411B02911C00B9A0FB /* FABJLObjectDeserializer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B340CC4F1A6DEC6700329CF6 /* FABJLObjectDeserializer.h */; };
-		B371B9421B02911C00B9A0FB /* FABJLObjectMapper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B340CC511A6DEC6700329CF6 /* FABJLObjectMapper.h */; };
-		B371B9431B02911C00B9A0FB /* FABJLObjectSerializer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B340CC531A6DEC6700329CF6 /* FABJLObjectSerializer.h */; };
-		B371B9441B02912C00B9A0FB /* FABJLTranscodingBase.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B340CC551A6DEC6700329CF6 /* FABJLTranscodingBase.h */; };
 		B399BCA61AD5A355009E1A50 /* FABJLCategoryLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = B399BCA51AD5A355009E1A50 /* FABJLCategoryLoader.m */; };
 		B399BCA71AD5A355009E1A50 /* FABJLCategoryLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = B399BCA51AD5A355009E1A50 /* FABJLCategoryLoader.m */; };
 		B399BCB81AD5A76D009E1A50 /* FABJLCategoryLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = B399BCA41AD5A355009E1A50 /* FABJLCategoryLoader.h */; };
@@ -72,26 +64,6 @@
 			remoteInfo = JLJSONMapping;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		B32198971749A10700066DA7 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = include/FABJLJSONMapping;
-			dstSubfolderSpec = 16;
-			files = (
-				B371B9441B02912C00B9A0FB /* FABJLTranscodingBase.h in CopyFiles */,
-				B371B93D1B02911C00B9A0FB /* FABJLCategoryLoader.h in CopyFiles */,
-				B371B93E1B02911C00B9A0FB /* NSError+JLJSONMapping.h in CopyFiles */,
-				B371B93F1B02911C00B9A0FB /* NSMutableArray+JLJSONMapping.h in CopyFiles */,
-				B371B9401B02911C00B9A0FB /* NSObject+JLJSONMapping.h in CopyFiles */,
-				B371B9411B02911C00B9A0FB /* FABJLObjectDeserializer.h in CopyFiles */,
-				B371B9421B02911C00B9A0FB /* FABJLObjectMapper.h in CopyFiles */,
-				B371B9431B02911C00B9A0FB /* FABJLObjectSerializer.h in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B32198991749A10700066DA7 /* libFABJLJSONMapping.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFABJLJSONMapping.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -337,7 +309,6 @@
 			buildPhases = (
 				B32198951749A10700066DA7 /* Sources */,
 				B32198961749A10700066DA7 /* Frameworks */,
-				B32198971749A10700066DA7 /* CopyFiles */,
 				B399BCB01AD5A6E0009E1A50 /* Headers */,
 			);
 			buildRules = (
@@ -546,7 +517,9 @@
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				OTHER_LDFLAGS = "-ObjC";
+				PRIVATE_HEADERS_FOLDER_PATH = "PrivateHeaders/${PRODUCT_NAME}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "Headers/${PRODUCT_NAME}";
 				SKIP_INSTALL = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 			};
@@ -565,7 +538,9 @@
 				GCC_OPTIMIZATION_LEVEL = fast;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				OTHER_LDFLAGS = "-ObjC";
+				PRIVATE_HEADERS_FOLDER_PATH = "PrivateHeaders/${PRODUCT_NAME}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "Headers/${PRODUCT_NAME}";
 				SKIP_INSTALL = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 			};
