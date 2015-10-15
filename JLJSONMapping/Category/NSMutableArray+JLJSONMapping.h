@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-void linkFABMutableArrayCategory();
 
 @interface NSMutableArray (FABJLJSONMapping)
 

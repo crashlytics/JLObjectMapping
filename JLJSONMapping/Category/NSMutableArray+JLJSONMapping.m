@@ -10,8 +10,6 @@
 
 @implementation NSMutableArray (FABJLJSONMapping)
 
-void linkFABMutableArrayCategory(){}
-
 + (NSMutableArray *)jl_newSparseArray:(NSUInteger)size
 {
     NSMutableArray *newArray = [[NSMutableArray alloc] initWithCapacity:size];

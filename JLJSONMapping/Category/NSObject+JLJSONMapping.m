@@ -10,8 +10,6 @@
 
 @implementation NSObject (FABJLJSONMapping)
 
-void linkFABObjectCategory(){}
-
 + (NSDateFormatter *)jl_dateFormatterForPropertyNamed:(NSString*)propertyName
 {
     //NOTE: ignoring propertyName
