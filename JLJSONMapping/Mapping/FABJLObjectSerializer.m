@@ -7,7 +7,6 @@
 //
 
 #import <objc/runtime.h>
-#import "FABJLCategoryLoader.h"
 #import "FABJLObjectMapper.h"
 #import "FABJLObjectMappingUtils.h"
 #import "FABJLObjectSerializer.h"
@@ -31,7 +30,6 @@
     if (self) {
         _optionMask = options;
         _classPropertiesNameMap = [[NSCache alloc] init];
-        [FABJLCategoryLoader loadCategories];
     }
     return self;
 }

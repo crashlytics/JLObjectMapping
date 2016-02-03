@@ -8,8 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-void linkFABObjectCategory();
-
 @interface NSObject (FABJLJSONMapping)
 
 /* 

@@ -7,7 +7,6 @@
 //
 
 #import <objc/runtime.h>
-#import "FABJLCategoryLoader.h"
 #import "FABJLObjectDeserializer.h"
 #import "FABJLObjectMappingUtils.h"
 #import "FABJLTimer.h"
@@ -31,7 +30,6 @@
     if (self) {
         _optionMask = options;
         _collectedPropertyCache = [[NSCache alloc] init];
-        [FABJLCategoryLoader loadCategories];
     }
     return self;
 }

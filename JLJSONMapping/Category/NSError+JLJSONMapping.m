@@ -8,24 +8,18 @@
 
 #import "NSError+JLJSONMapping.h"
 
-NSString * const kFABObjectMappingDomain = @"com.fabric.objectmapping";
-NSString * const kFABObjectMappingDescriptionKey = @"FABJLObjectMappingDescriptionKey";
-NSString * const kFABObjectMappingFailureReasonKey = @"FABJLObjectMappingDetailedFailureReasonKey";
-
 @implementation NSError (FABJLJSONMapping)
-
-void linkFABErrorCategory(){}
 
 + (NSError *)errorWithReason:(FABJLDeserializationError)reason reasonText:(NSString *)reasonText description:(NSString *)description
 {
     NSMutableDictionary *infoDict = [[NSMutableDictionary alloc] init];
     if (reasonText) {
-        [infoDict setObject:reasonText forKey:kFABObjectMappingFailureReasonKey];
+        [infoDict setObject:reasonText forKey:@"FABJLObjectMappingDetailedFailureReasonKey"];
     }
     if (description) {
-        [infoDict setObject:description forKey:kFABObjectMappingDescriptionKey];
+        [infoDict setObject:description forKey:@"FABJLObjectMappingDescriptionKey"];
     }
-    return [NSError errorWithDomain:kFABObjectMappingDomain code:reason userInfo:([infoDict count] > 0) ? infoDict : nil];
+    return [NSError errorWithDomain:@"com.fabric.objectmapping" code:reason userInfo:([infoDict count] > 0) ? infoDict : nil];
 }
 
 @end
